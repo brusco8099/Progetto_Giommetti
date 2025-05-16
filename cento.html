@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="cima">
+        <br>
+        <div id="header-content">
+        <h1 id="titolo">
+            L'ATLETICA LEGGERA
+        </h1>
+        <img src="wa.png">
+        </div>
+        <h2 style="font-family: Montserrat; text-align: center; font-size: 30px;">
+            LO SPRINT
+        </h2>
+
+        <div id="header2">
+            <ul id="menu">
+                <li><p class="head-links" id="nome" style="padding-right: 150px;"></p></li>
+                <li><a class="head-links" href="index.html">Home</a></li>
+                <li><a class="head-links">News</a></li>
+                <li><a class="head-links">Atleti</a></li>
+                <li><a class="head-links">Competizioni</a></li>
+                <li id="dropdown">
+                    <a class="head-links">Classifiche</a>
+                    <div id="rankings">
+                        <a class="testo" id="gare" style="color: white;" href="cento.html">100 m</a>
+                        <a class="testo" id="gare" style="color: white;" href="duecento.html">200 m</a>
+                        <a class="testo" id="gare" style="color: white;" href="quattrocento.html">400 m</a>
+                    </div>
+                </li>
+                <li><a class="head-links" href="login.html">Accedi</a></li>
+                <li><a class="head-links" href="signUp.html">Registrati</a></li>
+            </ul>
+        </div>
+        
+    </header>
+    <p class="titolo-sezione">
+        100m anno 2024
+    </p>
+    <p class="testo">
+        Questi sono i migliori tempi regolari, registrati nell'anno 2024. 
+    </p>
+    <div id="container">
+        <table id="tabella-tempi">
+            <tr style="background-color: #242424; color: white">
+                <th class="testo">
+                    Pos.
+                </th>
+                <th class="testo">
+                    Atleta
+                </th>
+                <th class="testo">
+                    Nazionalità
+                </th>
+                <th class="testo">
+                    Prestazione
+                </th>
+            </tr>
+            <tr>
+                <td style="background-color: #f9843d;" class="testo">1</td>
+                <td class="testo">Kishane THOMPSON</td>
+                <td class="testo">JAM</td>
+                <td class="testo">9.77</td>
+            </tr>
+            <tr>
+                <td style="background-color: #f9843d;" class="testo">2</td>
+                <td class="testo">Ferdinand OMANYALA</td>
+                <td class="testo">KEN</td>
+                <td class="testo">9.79</td>
+            </tr>
+            <tr>
+                <td style="background-color: #f9843d;" class="testo">3</td>
+                <td class="testo">Noah LYLES</td>
+                <td class="testo">USA</td>
+                <td class="testo">9.79</td>
+            </tr>
+            <tr>
+                <td class="testo">4</td>
+                <td class="testo">Fred KERLEY</td>
+                <td class="testo">USA</td>
+                <td class="testo">9.77</td>
+            </tr>
+            <tr>
+                <td class="testo">5</td>
+                <td class="testo">Oblique SEVILLE</td>
+                <td class="testo">JAM</td>
+                <td class="testo">9.81</td>
+            </tr>
+            <tr>
+                <td class="testo">6</td>
+                <td class="testo">Akani SIMBINE</td>
+                <td class="testo">RSA</td>
+                <td class="testo">9.82</td>
+            </tr>
+            <tr>
+                <td class="testo">7</td>
+                <td class="testo">Lamont Marcell JACOBS</td>
+                <td class="testo">ITA</td>
+                <td class="testo">9.85</td>
+            </tr>
+            <tr>
+                <td class="testo">8</td>
+                <td class="testo">Christian COLEMAN</td>
+                <td class="testo">USA</td>
+                <td class="testo">9.86</td>
+            </tr>
+        </table>
+    </div>
+    <footer id="fondo">
+        <p id="testo-footer">
+            Link utili
+        </p>
+        <ul style="list-style-type:square;">
+            <li>
+                <a href="https://worldathletics.org/" style="text-decoration: none; font-family: Montserrat; color: white;">World Athletics</a>
+            </li>
+            <li>
+                <a href="https://www.fidal.it/" style="text-decoration: none; font-family: Montserrat; color: white;">Fidal </a>
+            </li>
+            <li>
+                <a href="https://toscana.fidal.it/" style="text-decoration: none; font-family: Montserrat; color: white;">Fidal Toscana</a>
+            </li>
+            <li>
+                <a href="#cima" style="text-decoration: none; font-family: Montserrat; color: white;">Torna in cima</a> 
+             </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const utente = localStorage.getItem("utente");
+            const testoUtente = document.getElementById("nome");
+    
+            if (utente && testoUtente) {
+                testoUtente.innerHTML = "";
+
+                const img = document.createElement("img");
+                img.src = "user-icon-vector.jpg";
+                img.alt = utente;
+                img.classList.add("profilo-utente");
+
+                const span = document.createElement("span");
+                span.textContent = utente;
+                span.style.marginLeft = "8px";
+                span.style.fontFamily = "Montserrat";
+                span.style.color = "white";
+
+                testoUtente.appendChild(img);
+                testoUtente.appendChild(span);
+            }
+
+        });
+    </script>
+</body>
+</html>

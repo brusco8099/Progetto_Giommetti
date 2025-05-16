@@ -1,0 +1,26 @@
+Ecco gli estremi minimi per avere un progetto sufficientemente esteso per la seconda valutazione del quadrimestre:
+
+
+Contenuti necessari:
+-Almeno uno di ogni tag h (da h1 a h6 tutti senza distinzione) 
+-Almeno 3 paragrafi, ognuno diverso dagli altri per impostazione grafica (css a lui riferito) ✔
+-Almeno un elenco ordinato e uno non ordinato, entrambi con attributo type specificato all'interno del file html ✔
+-Almeno una tabella che contenga non meno di 4 righe e 4 colonne ✔
+-Almeno 3 riferimenti interni (tag <a> che contengano un riferimento con # all'id di un altro elemento della stessa pagina) ✔
+-Almeno 3 link a siti esterni (tag <a> che contengano un indirizzo ad un sito esterno attraverso un url di una pagina web) ✔
+-Almeno un esempio di CSS inline ✔
+-Almeno un esempio di CSS interno alla pagina html presente nell'head ✔
+
+Tutto il progetto dovrà essere costituito delle seguenti componenti:
+-3 pagine html che dovranno essere collegate tra loro attraverso tag <a>, con riferimento tramite indirizzo locale, in maniera tale che da qualsiasi pagina attraverso il click di uno o più link si riesca ad arrivare alle altre due pagine. (DEVE VALERE PER TUTTE LE PAGINE) ✔
+-1 foglio di stile CSS che deve essere incluso in una o più delle pagine html sopra citate attraverso la consona scrittura all'interno dell'head ✔
+
+
+BOXMODEL
+
+h1 ✔
+h2 ✔
+h3 ✔
+h4
+h5
+h6

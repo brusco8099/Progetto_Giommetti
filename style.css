@@ -1,0 +1,164 @@
+#cima {
+  height: min-content;
+}
+
+#titolo {
+  padding-left: 30%;
+  color: black;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#header-content {
+  display: flex;
+  align-items: center;
+  gap: 15%;
+}
+
+
+
+#menu {
+  padding-left: 10%;
+  font-size: 18px;
+}
+
+#menu li {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 10px;
+}
+
+#menu .head-links:hover {
+  text-decoration: underline;
+  text-decoration-color: #f9843d;
+}
+
+#header2 {
+  display: flex;
+  justify-content: center;
+  background-color: #242424;
+  position: relative;
+}
+
+#dropdown a {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+#dropdown #rankings {
+  display: none;
+  background-color: #242424;
+  position: absolute;
+  min-width: 100px;
+}
+
+#dropdown:hover #rankings {
+  display: block;
+}
+
+#gare:hover {
+  text-decoration: underline;
+  text-decoration-color: #f9843d;
+}
+
+.profilo-utente {
+    height: 30px;
+    width: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.head-links {
+  font-family: Montserrat;
+  color: white;
+}
+
+.titolo-sezione {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: Montserrat;
+  font-weight: 550;
+  font-size: 45px;
+}
+
+.testo {
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-family: Montserrat;
+  font-weight: 450;
+}
+
+
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+#tabella-tempi th,
+#tabella-tempi td {
+  text-align: center;
+  width: 150px;
+  padding: 10px 40px;
+}
+
+#tabella-tempi {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: Montserrat;
+  table-layout: fixed;
+  height: 400px;
+  overflow-y: auto;
+  background-color: #fdfdfd;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#tabella-tempi tr {
+  height: 50px;
+}
+
+#tabella-tempi th {
+  background-color: #242424;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+}
+
+#tabella-tempi td {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+#fondo{
+  background-color: #242424;
+}
+
+#testo-footer{
+  font-family: Montserrat ;
+  font-size: large;
+  color: #ccc;
+  padding-left: 100px;
+  padding-top:20px;
+  
+}
+
+
+#nome {
+  position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: Montserrat;
+    margin: 0;
+}
+

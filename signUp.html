@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+        <style>
+            body{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+              margin: 0;
+              background-color: #121212;
+              font-family: Montserrat;
+            }
+            #form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-width: 10px;
+                background-color: #242424;
+                border-radius: 15px;
+                width: 500px;
+                height: 500px;
+              }
+
+              .testo-form{
+                font-family: Montserrat;
+                font-size: 30px;
+                color: #f9843d;
+              }
+
+              input {
+                font-family: Montserrat;
+                font-size: large;
+                width: 400px;
+                color: black;
+                font-weight: 550;
+                border: none;
+                border-bottom: 2px solid #f9843d;
+                background: transparent;
+                outline: none;
+                padding: 5px 0;
+                margin-bottom: 20px;
+                color: #f9843d;
+              }
+
+              
+
+            #submit {
+              background-color: #f3f7fe;
+              color: #f9843d;
+              font-family: Montserrat;
+              border: none;
+              cursor: pointer;
+              border-radius: 8px;
+              width: 100px;
+              height: 45px;
+              transition: 0.3s;
+            }
+
+            #submit:hover {
+              background-color: #f9843d;
+              box-shadow: 0 0 0 5px #242424;
+              color: #fff;
+            }
+
+              
+              
+        </style>
+</head>
+<body>
+    <p class="titolo-sezione" style="color: #f9843d;">
+        Crea il tuo account
+    </p>
+    <div id="form">
+        
+        <form>
+            <p class="testo-form" >Nome utente</p>
+            <input type="text" id="utente" required>
+            <br>
+            <p class="testo-form" >Password</p>
+            <input type="password" id="password" required minlength="8">
+            <br>
+            <br>
+            <br>
+            <button id="submit" onclick="signUp(event)">
+                Accedi
+            </button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
